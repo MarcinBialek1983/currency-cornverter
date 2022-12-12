@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantor</title>
+    <script defer src="script.js"></script>
+    <link href="style.css/container.css" rel="stylesheet">
+    <link href="style.css/form.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="container">
+        <form class="form js-form">
+            <fieldset class="form__fildset">
+                <legend class="form__legend">Aktualne kursy walut w PLN</legend>
+                <p class="fildset__paragraph">
+                    <label><img class="img" width="30"
+                            src="https://i.postimg.cc/BZRTNctr/flagi-unii-europejskie.png"><strong
+                            class="form__label">Euro (EUR):</strong>
+                        <input class="form__input js-EUR" value="4.85">
+                    </label>
+                    <label><img class="img" width="30" src="https://i.postimg.cc/qR5RJL94/flaga-norwegii.jpg"><strong
+                            class="form__label">Korona norweska (NOK):</strong>
+                        <input class="form__input js-NOK" value="0.44"></label>
+
+                </p>
+                <p class="fildset__paragraph">
+                    <label><img class="img" width="30" src="https://i.postimg.cc/8PWhYJ6j/flaga-usa.jpg">
+                        <strong class="form__label">Dolar amerykański (USD):</strong>
+                        <input class="form__input js-USD" value="4.55">
+                    </label>
+                    <label><img class="img" width="30" src="images/flaga kanady.jpg"><strong class="form__label">Dolar
+                            kanadyjski (CAD):</strong>
+                        <input class="form__input js-CAD" value="3.23"></label>
+                </p>
+                <p class="fildset__paragraph">
+                    <label><img class="img" width="30" src="https://i.postimg.cc/kM2NxhMN/flaga-brytyjska.jpg">
+                        <strong class="form__label">Funt brytyjski (GBR):</strong>
+                        <input class="form__input js-GBR" value="5.80">
+                    </label>
+                    <label><img class="img" width="30" src="https://i.postimg.cc/LXX5F7Qx/flaga-japonii.jpg"><strong
+                            class="form__label">Jen
+                            (JPY):</strong>
+                        <input class="form__input js-JPY" value="3.25"></label>
+                </p>
+                <p class="fildset__paragraph">
+                    <label><img class="img" width="30" src="https://i.postimg.cc/wjphYqXF/flaga-szwajcarii.jpg">
+                        <strong class="form__label">Frank szwajcarski (CHF):</strong>
+                        <input class="form__input js-CHF" value="4.88">
+                    </label>
+                    <label><img class="img" width="30" src="https://i.postimg.cc/JtwzJhrF/flaga-czech.jpg"><strong
+                            class="form__label">Korona
+                            czeska (CZK):</strong>
+                        <input class="form__input js-CZK" value="0.19"></label>
+                </p>
+            </fieldset>
+            <fieldset class="form__fildset">
+                <legend class="form__legend">Kantor wymiany walut</legend>
+                <p><label class="form__label--changed"><strong>Podaj kwotę w jaką chcesz wymienić:</strong>
+                        <input class="js-amount" type="number" required step="0.01"
+                            placeholder="Podaj kwotę w złotówkach">
+                    </label></p>
+                <p><label class="form__label--changed"><strong>Wybierz walutę:</strong>
+                        <select class="js-currency">
+                            <option value="EUR">Euro</option>
+                            <option value="USD">Dolar amerykański</option>
+                            <option value="GBR">Funt brytyjski</option>
+                            <option value="CHF">Frank szwajcarski</option>
+                            <option value="NOK">Korona norweska</option>
+                            <option value="CAD">Dolar kanadyjski</option>
+                            <option value="JPY">Jen</option>
+                            <option value="CZK">Korona czeska</option>
+                        </select>
+                    </label></p>
+
+            </fieldset>
+            <p>
+                <button class="button"><strong>Wymień</strong></button>
+            </p>
+            <p><strong>Otrzymasz:</strong> <strong class="js-result"></strong></p>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

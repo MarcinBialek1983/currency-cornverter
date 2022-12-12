@@ -1,0 +1,46 @@
+.form__label {
+    width: 240px;
+    display: inline-block;
+    margin: 5px;
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+.form__input {
+    padding: 5px;
+    border: 2px solid teal;
+    border-radius: 5px;
+    max-width: 75px;
+    text-align: center;
+}
+
+.form__legend {
+    border: 3px solid teal;
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 10px;
+    background-color: hsl(0, 0%, 98%)
+}
+
+.form__fildset {
+    border-radius: 10px;
+    border: 5px solid teal;
+    margin-bottom: 20px;
+    background-color: hsl(0, 0%, 98%)
+}
+
+.form__label--changed {
+    max-width: 500px;
+    margin: 10px;
+}
+
+.img {
+    padding-left: 20px;
+}
+
+.fildset__paragraph{
+    display:flex;
+    text-align:initial;
+    padding: 2px;
+}
