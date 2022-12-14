@@ -1,5 +1,5 @@
 
-console.log("Witam");
+console.log("Witam wszystkich w moim kantorze :)");
 
 const formElement = document.querySelector(".js-form");
 const amountElement = document.querySelector(".js-amount");
