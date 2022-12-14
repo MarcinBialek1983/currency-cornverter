@@ -38,11 +38,15 @@
 }
 
 .img {
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 .result__paragrapf{
     text-align: center;
     color: teal;
     font-size: 30px;
+}
+
+.fildset__paragraph{
+    display: inline-block;
 }
