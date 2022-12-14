@@ -1,9 +1,10 @@
 .form__label {
-    width: 240px;
+    min-width: 240px;
     display: inline-block;
     margin: 5px;
     font-size: 20px;
-    margin: 10px;
+    padding: 10px;
+   
 
 }
 
@@ -20,28 +21,22 @@
     border-radius: 5px;
     font-size: 30px;
     padding: 10px;
-    background-color: hsl(0, 0%, 98%)
+    background-color: hsl(0, 0%, 98%);
 }
 
 .form__fildset {
     border-radius: 10px;
     border: 5px solid teal;
     margin-bottom: 20px;
-    background-color: hsl(0, 0%, 98%)
+    background-color: hsl(0, 0%, 98%);
+    min-height: auto;
 }
 
 .form__label--changed {
     max-width: 500px;
     margin: 10px;
-    display: inline-block;
 }
 
 .img {
     padding-left: 20px;
-}
-
-.fildset__paragraph{
-    display:flex;
-    text-align:initial;
-    padding: 2px;
 }
