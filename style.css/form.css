@@ -40,3 +40,9 @@
 .img {
     padding-left: 20px;
 }
+
+.result__paragrapf{
+    text-align: center;
+    color: teal;
+    font-size: 30px;
+}
