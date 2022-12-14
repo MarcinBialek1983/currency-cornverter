@@ -33,6 +33,7 @@
 .form__label--changed {
     max-width: 500px;
     margin: 10px;
+    display: inline-block;
 }
 
 .img {
