@@ -57,7 +57,12 @@
 
 .fildset__paragraph{
     margin: 10px;
-    min-height: 70;
     max-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
 }
+
+
 
