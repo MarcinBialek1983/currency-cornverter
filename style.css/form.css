@@ -1,4 +1,12 @@
-.form__label {
+.form{
+    width: 100%;
+}
+
+.form__label{
+    padding: 5px;
+    }
+
+.form__label--currency {
     min-width: 240px;
     display: inline-block;
     margin: 5px;
@@ -6,9 +14,7 @@
     padding: 10px;
 }
 
-.form{
-    width: 100%;
-}
+
 
 .form__input {
     padding: 9px;
@@ -51,4 +57,7 @@
 
 .fildset__paragraph{
     margin: 10px;
+    min-height: 70;
+    max-height: 150px;
 }
+
