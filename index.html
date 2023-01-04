@@ -64,14 +64,14 @@
                         <input class="form__input js-CZK" value="0.19"></label>
                 </p>
             </fieldset>
-            <fieldset class="form__fildset">
+            <fieldset class="form__fildset--changed form__fildset">
                 <legend class="form__legend">Kantor wymiany walut</legend>
-                <p><label class="form__label--changed"><strong>Podaj kwotę w jaką chcesz wymienić:</strong>
-                        <input class="js-amount" type="number" required step="0.01"
+                <p><label class="form__label form__label--changed"><strong class="form__label--text">Podaj kwotę w PLN:</strong>
+                        <input class="form__label--input js-amount" type="number" required step="0.01"
                             placeholder="Podaj kwotę w złotówkach">
                     </label></p>
-                <p><label class="form__label--changed"><strong>Wybierz walutę:</strong>
-                        <select class="js-currency">
+                <p><label class="form__label form__label--changed"><strong class="form__label--text">Wybierz walutę:</strong>
+                        <select class="form__label--select js-currency">
                             <option value="EUR">Euro</option>
                             <option value="USD">Dolar amerykański</option>
                             <option value="GBR">Funt brytyjski</option>
@@ -87,7 +87,7 @@
             <p>
                 <button class="button"><strong>Wymień</strong></button>
             </p>
-            <p class="result__paragrapf"><strong>Wymieniłeś: </strong><strong class="js-result"></strong></p>
+            <p class="resultParagrapf"><strong>Wymieniłeś: </strong><strong class="js-result"></strong></p>
         </form>
     </div>
 

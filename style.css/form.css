@@ -14,8 +14,6 @@
     padding: 10px;
 }
 
-
-
 .form__input {
     padding: 9px;
     border: 2px solid teal;
@@ -37,19 +35,26 @@
     border: 5px solid teal;
     margin-bottom: 20px;
     background-color: hsl(0, 0%, 98%);
+    display: list-item;
+    padding: 10px;
+}
+
+.form__fildset--changed {
+    max-width: 600px;
 }
 
 .form__label--changed {
     max-width: 500px;
     margin: 10px;
     padding: 10px;
+    font-size: 20px;
 }
 
 .img {
     padding-left: 30px;
 }
 
-.result__paragrapf{
+.resultParagrapf {
     text-align: center;
     color: teal;
     font-size: 25px;
@@ -64,5 +69,16 @@
     align-items: flex-end;
 }
 
+.form__label--input{
+    background-color: hsl(0, 0%, 90%);
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    max-width: 300px;
+}
 
-
+.form__label--select{
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 5px;
+    margin-left: 35px;
+}

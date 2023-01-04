@@ -21,35 +21,35 @@ formElement.addEventListener("submit", (event) => {
 
     let amount = +amountElement.value;
     let currency = currencyElement.value;
-
-    let result;
+    let rate;
 
     switch (currency) {
         case "EUR":
-            result = amount / EUR.value;
+            rate = EUR.value;
             break;
         case "USD":
-            result = amount / USD.value;
+            rate = USD.value;
             break;
         case "GBR":
-            result = amount / GBR.value;
+            rate = GBR.value;
             break;
         case "CHF":
-            result = amount / CHF.value;
+            rate = CHF.value;
             break;
         case "NOK":
-            result = amount / NOK.value;
+            rate = NOK.value;
             break;
         case "CAD":
-            result = amount / CAD.value;
+            rate = CAD.value;
             break;
         case "JPY":
-            result = amount / JPY.value;
+            rate = JPY.value;
             break;
         case "CZK":
-            result = amount / CZK.value;
-            break;
+            rate = CZK.value;
     }
+    
+    const result = amount / rate;
 
     resultElement.innerText = `${amount.toFixed(2)} PLN na ${result.toFixed(2)} ${currency} `;
 });
