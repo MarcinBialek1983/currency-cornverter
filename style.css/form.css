@@ -27,20 +27,17 @@
     border-radius: 5px;
     font-size: 30px;
     padding: 10px;
-    background-color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 100%);
+    margin:auto;
 }
 
 .form__fildset {
     border-radius: 10px;
     border: 5px solid teal;
     margin-bottom: 20px;
-    background-color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 90%);
     display: list-item;
     padding: 10px;
-}
-
-.form__fildset--changed {
-    max-width: 600px;
 }
 
 .form__label--changed {
@@ -70,7 +67,7 @@
 }
 
 .form__label--input{
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 100%);
     font-size: 20px;
     border-radius: 5px;
     border: 1px solid black;
@@ -78,7 +75,7 @@
 }
 
 .form__label--select{
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 100%);
     border-radius: 5px;
     margin-left: 35px;
 }
