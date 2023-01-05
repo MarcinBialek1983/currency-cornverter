@@ -1,0 +1,16 @@
+.button{
+    padding: 10px;
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 10px; 
+    font-size: 20px;
+    width: 100%;
+    border: 5px solid teal;
+}
+
+.button:hover{
+    background-color: hsl(0, 0%, 80%);   
+}
+
+.button:active{
+    background-color: hsl(0, 0%, 70%);
+}
