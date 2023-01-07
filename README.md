@@ -15,7 +15,7 @@
 
 ## Technologies used in the project:
 
-HTML
-CSS
-JavaScript
-BEM convention
+- HTML
+- CSS
+- JavaScript
+- BEM convention
