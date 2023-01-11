@@ -1,12 +1,11 @@
 .container {
-    max-width: 100%;
-    min-width: 550px;
-    overflow-x: auto;
-    margin-left: 3px;
+   margin-right: 20px;
+   flex-basis: 700px;
+
 }
 
 .fildset__paragraph{
-    margin: 10px;
+    margin: auto;
     max-height: 150px;
     display: flex;
     flex-wrap: wrap;
@@ -16,11 +15,15 @@
 
 .resultParagrapf {
     text-align: center;
-    font-size: 25px;
-    color: teal;
+    font-size: 20px;
+    color: black ;
 }
-
-.img {
-    padding-left: 30px;
+.body{
+    margin:5px;
+    padding: 30px;
+    background-image: url(../images/tło.jpg);
+    background-position: center;
+    min-height: 100vh;
+    background-size: cover;
 }
 

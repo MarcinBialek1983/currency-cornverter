@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body class="body">
     <div class="container">
         <form class="form js-form">
             <fieldset class="form__fildset">
@@ -65,7 +65,7 @@
                         <input class="form__input js-CZK" value="0.19"></label>
                 </p>
             </fieldset>
-            <fieldset class="form__fildset">
+            <fieldset class="form__fildset--changed">
                 <legend class="form__legend">Kantor wymiany walut</legend>
                 <p><label class="form__label form__label--changed"><strong class="form__label--text">Podaj kwotę w PLN:</strong>
                         <input class="form__label--input js-amount" type="number" required step="0.01"
@@ -82,13 +82,15 @@
                             <option value="JPY">Jen</option>
                             <option value="CZK">Korona czeska</option>
                         </select>
+                        <p>
+                            <button class="button"><strong>Wymień</strong></button>
+                        </p>
+                         <p class="resultParagrapf"><strong>Wymieniłeś: </strong><strong class="js-result"></strong></p>
                     </label></p>
 
             </fieldset>
-            <p>
-                <button class="button"><strong>Wymień</strong></button>
-            </p>
-            <p class="resultParagrapf"><strong>Wymieniłeś: </strong><strong class="js-result"></strong></p>
+           
+           
         </form>
     </div>
 

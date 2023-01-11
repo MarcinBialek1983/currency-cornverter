@@ -1,55 +1,68 @@
 
-console.log("Witam wszystkich w moim kantorze :)");
+{
+    const exchangeResult = (amount, currency) => {
 
-const formElement = document.querySelector(".js-form");
-const amountElement = document.querySelector(".js-amount");
-const currencyElement = document.querySelector(".js-currency");
-const resultElement = document.querySelector(".js-result");
-let EUR = document.querySelector(".js-EUR");
-let USD = document.querySelector(".js-USD");
-let GBR = document.querySelector(".js-GBR");
-let CHF = document.querySelector(".js-CHF");
-let CAD = document.querySelector(".js-CAD");
-let NOK = document.querySelector(".js-NOK");
-let JPY = document.querySelector(".js-JPY");
-let CZK = document.querySelector(".js-CZK");
+        const rateEUR = document.querySelector(".js-EUR");
+        const rateUSD = document.querySelector(".js-USD");
+        const rateGBR = document.querySelector(".js-GBR");
+        const rateCHF = document.querySelector(".js-CHF");
+        const rateCAD = document.querySelector(".js-CAD");
+        const rateNOK = document.querySelector(".js-NOK");
+        const rateJPY = document.querySelector(".js-JPY");
+        const rateCZK = document.querySelector(".js-CZK");
+
+        switch (currency) {
+            case "EUR":
+                return amount / rateEUR.value;
+
+            case "USD":
+                return amount / rateUSD.value;
+
+            case "GBR":
+                return amount / rateGBR.value;
+
+            case "CHF":
+                return amount / rateCHF.value;
+
+            case "NOK":
+                return amount / rateNOK.value;
+
+            case "CAD":
+                return amount / rateCAD.value;
+
+            case "JPY":
+                return amount / rateJPY.value;
+
+            case "CZK":
+                return amount / rateCZK.value;
+        };
 
 
+    };
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+    const resultText = (amount, currency, result) => {
+        const resultElement = document.querySelector(".js-result");
+        resultElement.innerHTML = `${amount.toFixed(2)} PLN na ${result.toFixed(2)} ${currency} `;
+    };
+    const onFormSubmit = (event) => {
+        event.preventDefault();
 
-    let amount = +amountElement.value;
-    let currency = currencyElement.value;
-    let rate;
+        const amountElement = document.querySelector(".js-amount");
+        const currencyElement = document.querySelector(".js-currency");
 
-    switch (currency) {
-        case "EUR":
-            rate = EUR.value;
-            break;
-        case "USD":
-            rate = USD.value;
-            break;
-        case "GBR":
-            rate = GBR.value;
-            break;
-        case "CHF":
-            rate = CHF.value;
-            break;
-        case "NOK":
-            rate = NOK.value;
-            break;
-        case "CAD":
-            rate = CAD.value;
-            break;
-        case "JPY":
-            rate = JPY.value;
-            break;
-        case "CZK":
-            rate = CZK.value;
-    }
-    
-    const result = amount / rate;
+        const amount = +amountElement.value;
+        const currency = currencyElement;
 
-    resultElement.innerText = `${amount.toFixed(2)} PLN na ${result.toFixed(2)} ${currency} `;
-});
+        const result = exchangeResult(amount, currency);
+
+       resultText(result, amount, currency);
+    };
+    const init = () => {
+
+        const formElement = document.querySelector(".js-form");
+        formElement.addEventListener("submit", onFormSubmit);
+
+    };
+    init();
+
+}

@@ -1,10 +1,11 @@
-.form{
+.form {
     width: 100%;
 }
 
-.form__label{
+.form__label {
     padding: 5px;
-    }
+    display: flex;
+}
 
 .form__label--currency {
     min-width: 240px;
@@ -12,49 +13,62 @@
     margin: 5px;
     font-size: 20px;
     padding: 10px;
+
 }
 
 .form__input {
     padding: 9px;
     border: 2px solid teal;
-    border-radius: 5px;
+    border-radius: 10px;
     max-width: 75px;
     text-align: center;
 }
 
 .form__legend {
-    border: 3px solid teal;
-    border-radius: 5px;
+    border: 2px solid teal;
+    border-radius: 10px;
     font-size: 30px;
     padding: 10px;
     background-color: hsl(0, 0%, 100%);
-    margin:auto;
+    margin: auto;
 }
 
 .form__fildset {
     border-radius: 10px;
-    border: 5px solid teal;
-    margin-bottom: 20px;
+    border: 2px solid teal;
     background-color: hsl(0, 0%, 90%);
     padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.form__fildset--changed {
+    border-radius: 10px;
+    border: 2px solid teal;
+    margin: auto;
+    background-color: hsl(0, 0%, 90%);
+    padding: 10px;
+    max-width: 500px;
 }
 
 .form__label--changed {
     max-width: 500px;
-    margin: 10px;
+    margin-left: 25px;
     padding: 10px;
     font-size: 20px;
 }
 
-.form__label--input{
+.form__label--input {
     background-color: hsl(0, 0%, 100%);
     font-size: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid black;
+    margin-left: 5px;
 }
 
-.form__label--select{
-    border-radius: 5px;
-    margin-left: 35px;
+.form__label--select {
+    border-radius: 10px;
+    margin-left: 40px;
     min-width: 250px;
 }
+
