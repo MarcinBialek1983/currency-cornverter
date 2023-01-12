@@ -42,7 +42,7 @@
 
     const resultText = (amount, currency, result) => {
         const resultElement = document.querySelector(".js-result");
-        resultElement.innerHTML = `${amount.toFixed(2)} PLN na ${result.toFixed(2)} ${currency} `;
+        resultElement.innerText = `${amount.toFixed(2)} PLN na ${result.toFixed(2)} ${currency} `;
     };
     const onFormSubmit = (event) => {
         event.preventDefault();
@@ -51,11 +51,11 @@
         const currencyElement = document.querySelector(".js-currency");
 
         const amount = +amountElement.value;
-        const currency = currencyElement;
+        const currency = currencyElement.value;
 
         const result = exchangeResult(amount, currency);
 
-       resultText(result, amount, currency);
+       resultText(amount, currency, result);
     };
     const init = () => {
 
